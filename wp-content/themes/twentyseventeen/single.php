@@ -26,6 +26,9 @@ get_header(); ?>
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
 				endif;
+//			 if ( shortcode_exists( 'alkalab_vue_comment' ) ) { echo "The shortcode exists";}
+
+//       do_shortcode('[alkalab_vue_comment post_id="'. get_the_ID().'"]');
 
 				the_post_navigation( array(
 					'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Post', 'twentyseventeen' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Previous', 'twentyseventeen' ) . '</span> <span class="nav-title"><span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '</span>%title</span>',

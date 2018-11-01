@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d14437b3-e77b-48ac-8aab-a3f9d7548ec1" name="Default" comment="" />
+    <list default="true" id="d14437b3-e77b-48ac-8aab-a3f9d7548ec1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js/vue-comment.js" afterPath="$PROJECT_DIR$/wp-content/plugins/js/vue-comment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/vue_comment.php" afterPath="$PROJECT_DIR$/wp-content/plugins/vue_comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/twentyseventeen/single.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,12 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="vue_comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/vue_comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="48" column="86" lean-forward="false" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
+            <state relative-caret-position="-380">
+              <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="70" />
               <folding>
                 <element signature="e#6#163#0#PHP" expanded="true" />
               </folding>
@@ -26,18 +31,8 @@
       <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/comments.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="24" />
+            <state relative-caret-position="240">
+              <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -46,35 +41,46 @@
       <file leaf-file-name="vue-comment.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/js/vue-comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+            <state relative-caret-position="152">
+              <caret line="92" column="44" lean-forward="false" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
               <folding>
-                <marker date="1541067495000" expanded="true" signature="94:96" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:103" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:111" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:112" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:119" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:120" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:125" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:126" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:127" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:140" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:157" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:160" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:314" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:339" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:341" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:342" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:343" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:548" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:550" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="94:565" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="401:455" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="401:519" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="401:548" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="1657:1723" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="1657:1725" ph="..." />
-                <marker date="1541067495000" expanded="true" signature="1657:1734" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:87" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:94" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:102" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:103" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:110" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:111" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:116" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:117" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:118" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:131" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:148" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:151" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:295" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:321" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:355" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:380" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:382" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:383" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:384" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:582" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:584" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="85:599" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="442:487" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="442:553" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="442:556" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="442:582" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="1549:1561" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="1549:2045" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="1573:2045" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="1634:1869" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="1927:1929" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="1927:1999" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="1927:2028" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="3154:3243" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="3154:3245" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="3154:3261" ph="..." />
+                <marker date="1541095422000" expanded="true" signature="3626:3680" ph="..." />
               </folding>
             </state>
           </provider>
@@ -102,10 +108,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>comment-list</find>
+      <find>alkalab_vue_comment</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/wp-content/themes/twentyseventeen</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -113,6 +123,12 @@
         <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/css/vue_comment.css" />
         <option value="$PROJECT_DIR$/wp-content/plugins/css/vue-comment.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/single.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/App.vue" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/components/Comments.vue" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/main.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/components/Comment.vue" />
         <option value="$PROJECT_DIR$/wp-content/plugins/vue_comment.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/js/vue-comment.js" />
       </list>
@@ -137,6 +153,7 @@
     <option name="width" value="1280" />
     <option name="height" value="709" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -169,26 +186,6 @@
               <item name="personal_wp" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal_wp" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="personal_wp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal_wp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="personal_wp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal_wp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="personal_wp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal_wp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -213,6 +210,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/components" />
       <recent name="$PROJECT_DIR$/wp-content/plugins" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -239,31 +237,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541052185019</updated>
-      <workItem from="1541052186253" duration="10329000" />
+      <workItem from="1541052186253" duration="16532000" />
+      <workItem from="1541090179998" duration="4936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10329000" />
+    <option name="totallyTimeSpent" value="21468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -278,49 +278,80 @@
     <wordpressPath>$PROJECT_DIR$</wordpressPath>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/hello.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/vue_comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
-            <marker date="1521296860000" expanded="true" signature="2066:2176" ph="..." />
-            <marker date="1521296860000" expanded="true" signature="2076:2167" ph="{...}" />
+            <element signature="e#6#163#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-config-sample.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/single.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="240">
+          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/js/vue-comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding>
+            <marker date="1541095422000" expanded="true" signature="85:87" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:94" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:102" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:103" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:110" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:111" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:116" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:117" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:118" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:131" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:148" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:151" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:295" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:321" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:355" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:380" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:382" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:383" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:384" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:582" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:584" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:599" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="442:487" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="442:553" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="442:556" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="442:582" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1549:1561" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1549:2045" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1573:2045" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1634:1869" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1927:1929" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1927:1999" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1927:2028" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="3154:3243" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="3154:3245" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="3154:3261" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="3626:3680" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -333,10 +364,133 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/hello.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config-sample.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/css/vue-comment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-643">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmlrpc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/shortcodes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="175" column="9" lean-forward="false" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="35" column="105" lean-forward="false" selection-start-line="35" selection-start-column="92" selection-end-line="35" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/template-parts/post/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="586" column="0" lean-forward="true" selection-start-line="586" selection-start-column="0" selection-end-line="586" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/comment-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="1300" column="22" lean-forward="false" selection-start-line="1300" selection-start-column="14" selection-end-line="1300" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/components/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/alkalab_vue_comment/src/components/Comment.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-553">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyseventeen/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/vue_comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="48" column="86" lean-forward="false" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
+        <state relative-caret-position="-380">
+          <caret line="30" column="52" lean-forward="false" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="70" />
           <folding>
             <element signature="e#6#163#0#PHP" expanded="true" />
           </folding>
@@ -345,35 +499,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/js/vue-comment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        <state relative-caret-position="152">
+          <caret line="92" column="44" lean-forward="false" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
           <folding>
-            <marker date="1541067495000" expanded="true" signature="94:96" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:103" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:111" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:112" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:119" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:120" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:125" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:126" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:127" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:140" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:157" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:160" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:314" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:339" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:341" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:342" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:343" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:548" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:550" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="94:565" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="401:455" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="401:519" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="401:548" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="1657:1723" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="1657:1725" ph="..." />
-            <marker date="1541067495000" expanded="true" signature="1657:1734" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:87" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:94" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:102" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:103" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:110" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:111" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:116" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:117" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:118" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:131" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:148" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:151" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:295" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:321" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:355" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:380" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:382" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:383" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:384" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:582" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:584" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="85:599" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="442:487" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="442:553" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="442:556" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="442:582" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1549:1561" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1549:2045" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1573:2045" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1634:1869" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1927:1929" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1927:1999" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="1927:2028" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="3154:3243" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="3154:3245" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="3154:3261" ph="..." />
+            <marker date="1541095422000" expanded="true" signature="3626:3680" ph="..." />
           </folding>
         </state>
       </provider>

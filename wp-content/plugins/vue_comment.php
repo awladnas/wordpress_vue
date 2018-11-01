@@ -17,26 +17,29 @@ if ( ! class_exists( 'VueComment' ) ) {
 			add_shortcode( $this->shortcode_name, [$this, 'shortcode'] );
 			add_action( 'wp_enqueue_scripts', [$this, 'scripts'] );
 			add_action( 'wp_ajax_nopriv_vc_submit_comment', [$this, 'submit_comment'] );
+			add_action( 'wp_ajax_vc_submit_comment', [$this, 'submit_comment'] );
 		}
 
 		// return html where shortcode used
 		public function shortcode($atts) {
 //			print_r($atts);
 			$comments = get_comments(array( 'post_id' => $atts['post_id']));
-//			print_r($comments);
-//			die("DDDDDD");
-			$html = '';
+			$vue_atts = esc_attr( json_encode( [
+				'content' => '',
+				'post_id'  => $atts['post_id'],
+			] ) );
+			$html = "<div class='alkalab-vue-new-comment' data-avc-new-attrs='$vue_atts'> </div>";
 			foreach($comments as $comment) {
 				$html .= $this->comment_html($comment);
 			}
-			return $html;
+			echo $html;
 		}
 
-		public function comment_html($commnet) {
+		public function comment_html($comment) {
 			$vue_atts = esc_attr( json_encode( [
-				'id'       => $commnet->comment_ID,
-				'content' => $commnet->comment_content,
-				'post_id'  => $commnet->comment_post_ID,
+				'id'       => $comment->comment_ID,
+				'content' => $comment->comment_content,
+				'post_id'  => $comment->comment_post_ID,
 			] ) );
 			return "<div class='alkalab-vue-comment' data-avc-attrs='$vue_atts'> </div>";
 		}
@@ -55,8 +58,6 @@ if ( ! class_exists( 'VueComment' ) ) {
 
 		// save comment
 		public function submit_comment(){
-			print_r($_REQUEST);
-			die('DIE');
 			$comment = array();
 			$comment['comment_approved'] = 1;
 			$comment['comment_parent'] = 0;

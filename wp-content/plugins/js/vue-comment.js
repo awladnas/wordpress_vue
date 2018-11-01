@@ -1,11 +1,12 @@
-var vc = Vue.component('vue-comment', {
+Vue.component('vue-comment', {
     template: '<div class="avc-comment" :key="atts.id">\
                     <div class="edit-comment" v-if="editMode">\
-                        <textarea v-model="atts.content">{{atts.content}}</textarea>\
+                        <textarea v-model="content">{{content}}</textarea>\
                         <button @click="submitCommit">Update</button>\
+                        <span @click="cancelEdit">X</span>\
                     </div>\
                     <div class="display-comment" v-else>\
-                        <span>{{atts.content}}</span>\
+                        <pre>{{content}}</pre>\
                         <span @click="editCommit"\>Edit</span>\
                     </div>\
 		       </div>',
@@ -27,11 +28,57 @@ var vc = Vue.component('vue-comment', {
                 content: this.content,
                 post_id: this.post_id
             };
-            console.log(payload);
-            this.$http.post(action_url, payload)
+            console.log(payload, content);
+            // this.$http.post(action_url, payload)
+            jQuery.post( action_url,payload)
+            this.editMode = false
         },
         editCommit: function(){
          this.editMode = true
+        },
+        cancelEdit: function(){
+            this.editMode = false
+        }
+    }
+});
+
+Vue.component('vue-new-comment', {
+    template: '<div class="avc-comment">\
+                    <div class="new-comment" v-if="isOpen">\
+                        <textarea v-model="content">{{content}}</textarea>\
+                        <button @click="submitCommit">Create</button>\
+                        <span @click="cancelEdit">X</span>\
+                    </div>\
+                    <div class="display-comment" v-else>\
+                        <button @click="newCommit">New Comment</button>\
+                    </div>\
+		       </div>',
+    props: ['atts'],
+    data: function () {
+        return {
+            content: '',
+            post_id: this.atts.post_id,
+            isOpen: false
+        }
+    },
+    methods: {
+        submitCommit: function(){
+            if (null === this.content) return;
+            var action_url = window.ajaxurl + '?action=vc_submit_comment';
+            var payload = {
+                content: this.content,
+                post_id: this.post_id
+            };
+            console.log(payload, content);
+            // this.$http.post(action_url, payload)
+            jQuery.post( action_url,payload)
+            this.isOpen = false
+        },
+        newCommit: function(){
+            this.isOpen = true
+        },
+        cancelEdit: function(){
+            this.isOpen = false
         }
     }
 });
@@ -42,15 +89,27 @@ elements.forEach(function (element) {
     var atts = JSON.parse(element.getAttribute('data-avc-attrs'));
     var vm = new Vue({
         el: element,
-        data: {
-            newComment: false
-        },
         template: '<div class="avc-container">\
-			\<vue-comment :atts="atts" @submitted="pollSubmitted=true" />\
-			</div>',
+			        <vue-comment :atts="atts" :content="atts.content" :post_id="atts.post_id" />\
+			       </div>',
         created: function () {
             this.atts = atts;
+            this.newComment = false
         }
     });
     // vm.use(VueResource);
+});
+
+
+var element = document.querySelectorAll('[data-avc-new-attrs]')[0];
+var atts = JSON.parse(element.getAttribute('data-avc-new-attrs'));
+var vm = new Vue({
+    el: element,
+    template: '<div class="avc-container">\
+			    <vue-new-comment :atts="atts"/>\
+			   </div>',
+    created: function () {
+        this.atts = atts;
+        this.newComment = false
+    }
 });
