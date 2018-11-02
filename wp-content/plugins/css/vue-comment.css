@@ -2,3 +2,14 @@
   margin-bottom: 10px;
   border-bottom: 1px dashed palegoldenrod;
 }
+.avc-comment pre{
+  margin-bottom: 0;
+}
+
+.avc-comment span{
+  float: right;
+}
+.avc-comment button{
+  padding: .5em 1em;
+  margin-top: 5px;
+}

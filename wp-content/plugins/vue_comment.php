@@ -18,20 +18,18 @@ if ( ! class_exists( 'VueComment' ) ) {
 			add_action( 'wp_enqueue_scripts', [$this, 'scripts'] );
 			add_action( 'wp_ajax_nopriv_vc_submit_comment', [$this, 'submit_comment'] );
 			add_action( 'wp_ajax_vc_submit_comment', [$this, 'submit_comment'] );
+			add_action( 'wp_ajax_vc_get_comments', [$this, 'get_comments'] );
 		}
 
 		// return html where shortcode used
 		public function shortcode($atts) {
-//			print_r($atts);
-			$comments = get_comments(array( 'post_id' => $atts['post_id']));
 			$vue_atts = esc_attr( json_encode( [
 				'content' => '',
 				'post_id'  => $atts['post_id'],
+				'admin_url' => admin_url( 'admin-ajax.php' )
 			] ) );
 			$html = "<div class='alkalab-vue-new-comment' data-avc-new-attrs='$vue_atts'> </div>";
-			foreach($comments as $comment) {
-				$html .= $this->comment_html($comment);
-			}
+			$html .= "<div class='alkalab-vue-comment' data-avc-attrs='$vue_atts'> </div>";
 			echo $html;
 		}
 
@@ -52,14 +50,16 @@ if ( ! class_exists( 'VueComment' ) ) {
 				wp_enqueue_script( 'vue', 'https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js', [], '2.5.16' );
 				wp_enqueue_script( 'vue-comment', plugin_dir_url( __FILE__ ) . 'js/vue-comment.js', [], '0.1', true );
 				wp_enqueue_style( 'vue-comment', plugin_dir_url( __FILE__ ) . 'css/vue-comment.css', [], '0.1' );
-				wp_add_inline_script( 'vue-comment', 'window.ajaxurl = "' . admin_url( 'admin-ajax.php' ) . '"');
 			}
 		}
 
 		// save comment
 		public function submit_comment(){
 			$comment = array();
+			$current_user = wp_get_current_user();
 			$comment['comment_approved'] = 1;
+			$comment['comment_author'] = $current_user->user_login;
+			$comment['user'] = $current_user->ID;
 			$comment['comment_parent'] = 0;
 			$comment['comment_type'] = 0;
 			$comment['comment_post_ID'] = sanitize_text_field( $_REQUEST['post_id'] );;
@@ -69,9 +69,20 @@ if ( ! class_exists( 'VueComment' ) ) {
 				wp_update_comment( $comment );
 			}
 			else {
-				wp_insert_comment($comment);
+				$comment_id = wp_insert_comment($comment);
+				echo json_encode(get_comment($comment_id));
+				exit;
 			}
 			exit( 'success' );
+		}
+
+		// save comment
+		public function get_comments(){
+			$fields = ['comment_ID,comment_author,comment_date,comment_content'];
+			$comments = get_comments(array( 'post_id' => $_REQUEST['post_id'], 'fields' => $fields));
+//			$comments = get_comments(array( 'post_id' => $_REQUEST['post_id']));
+			echo json_encode( $comments);
+			exit;
 		}
 
 	}
