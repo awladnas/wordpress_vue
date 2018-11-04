@@ -44,6 +44,7 @@ if ( ! class_exists( 'VueComment' ) ) {
 				wp_enqueue_script( 'vue-comment', plugin_dir_url( __FILE__ ) . 'js/comment.js', [], '0.1', true );
 				wp_enqueue_script( 'vue-comment-main', plugin_dir_url( __FILE__ ) . 'js/vue-comment.js', [], '0.1', true );
 				wp_enqueue_style( 'vue-comment', plugin_dir_url( __FILE__ ) . 'css/vue-comment.css', [], '0.1' );
+				wp_enqueue_style( 'bootstrap-4', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', [], '0.1' );
 			}
 		}
 

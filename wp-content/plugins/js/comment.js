@@ -1,31 +1,31 @@
 Vue.component('vue-comment', {
-    template: '<div>\
-                    <div class="edit-comment clearfix"\ v-if="editMode">\
-                        <p class="comment-form-comment">\
-                            <div>\
-                                <textarea v-model="content" id="comment" name="comment" cols="45" rows="4" maxlength="65525" required="required" style="z-index: auto; position: relative; line-height: 24px; font-size: 16px; transition: none 0s ease 0s; background: transparent !important;">{{content}}</textarea>\
-                            </div>\
-                        </p>\
-                        <div class="actions">\
-                            <a @click="cancelEdit" href="javascript:void(0);" class="post-edit-link cancel"> Cancel</a>\
-                            <a @click="submitComment" href="javascript:void(0);" class="post-edit-link"> Save</a>\
+    template: '<div class="container">\
+                    <div class="edit-comment clearfix col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5" v-if="editMode">\
+                        <textarea v-model="content" id="comment" name="comment" cols="45" rows="4" maxlength="65525" required="required" style="z-index: auto; position: relative; line-height: 24px; font-size: 16px; transition: none 0s ease 0s; background: transparent !important;">{{content}}</textarea>\
+                        <div class="actions mt-2">\
+                            <button @click="cancelEdit" class="btn btn-avc cancel"> Cancel</button>\
+                            <button @click="submitComment" class="btn btn-avc float-right"> Save</button>\
                         </div>\
                     </div>\
-                    <article class="comment-body" v-else>\
-                        <footer class="comment-meta">\
-                            <div class="comment-author vcard">\
-                                <img alt="" :src="author_url" v-bind:src="author_url" class="avatar avatar-100 photo" height="100" width="100">\
-                                <b class="fn">{{author ? author : "Anonymous"}}</b> <span class="says">says:</span>\
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" v-else>\
+                        <div class="our-services-wrapper mb-2">\
+                            <div class="services-inner">\
+                                <div class="our-services-img">\
+                                    <img alt="" :src="author_url" v-bind:src="author_url" class="rounded-circle" height="100" width="100">\
+                                </div>\
+                                <div class="our-services-text">\
+                                    <div class="row">\
+                                        <div class="col-sm-6 col-md-7 col-lg-6 col-xl-6"><h4>{{author ? author : "Anonymous"}}</h4></div>\
+                                        <div class="col-sm-6 col-md-5 col-lg-6 col-xl-6 small float-right">{{date}}</div>\
+                                    </div>\
+                                    <p>{{content}}</p>\
+                                    <div class="row mt-5">\
+                                        <button @click="editComment"  type="button" class="col-sm-6 col-md-6 col-lg-4 col-xl-4 float-right mr-1 btn btn-avc">Edit</button>\
+                                    </div>\
+                                </div>\
                             </div>\
-                            <div class="comment-metadata">\
-                                <time datetime="">{{date}}</time>\
-                                <span class="edit-link"><a @click="editComment" class="comment-edit-link" href="javascript:void(0)">Edit</a></span>\
-                            </div>\
-                        </footer>\
-                        <div class="comment-content">\
-                            <p>{{content}}</p>\
                         </div>\
-                    </article>\
+                    </div>\
 		       </div>',
     props: ['id', 'comment_content', 'comment_date', 'comment_author', 'comment_post_id', 'comment_author_url'],
     data: function () {

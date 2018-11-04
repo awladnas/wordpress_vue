@@ -1,21 +1,18 @@
 Vue.component('vue-post-comments', {
-    template: '<div class="avc-comments-list" :key="id">\
-                    <div class="edit-comment new-comment clearfix" v-if="isOpen">\
+    template: '<div class="avc-comments-list container" :key="id">\
+                    <div class="clearfix col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5" v-if="isOpen">\
                         <h4> New Comment </h4>\
-                        <div>\
-                            <textarea v-model="content" id="comment" name="comment" cols="45" rows="4" maxlength="65525" required="required">{{content}}</textarea>\
-                        </div>\
-                        <div class="actions">\
-                            <a @click="cancelEdit" href="javascript:void(0);" class="post-edit-link cancel"> Cancel</a>\
-                            <a @click="saveComment" href="javascript:void(0);" class="post-edit-link"> Post</a>\
+                        <textarea v-model="content" id="comment" name="comment" cols="45" rows="4" maxlength="65525" required="required">{{content}}</textarea>\
+                        <div class="actions mt-2">\
+                            <button @click="cancelEdit" class="btn btn-avc cancel"> Cancel</button>\
+                            <button @click="saveComment" class="btn btn-avc float-right"> Post</button>\
                         </div>\
                     </div>\
                     <div class="clearfix" v-else>\
-                        <a @click="newComment" class="new-comment-btn" href="javascript:void(0)">New Comment</a>\
+                        <button @click="newComment" class="btn btn-avc mb-2 float-right"> New Comment</button>\
                     </div>\
-                    \
-                    <ol v-for="comment in updated_comments" class="comment-list">\
-                        <li class="avc-comment comment byuser comment-author-awlad bypostauthor even thread-even depth-1" :key="comment.comment_ID">\
+                    <ol class="comment-list">\
+                        <li v-for="comment in updated_comments" :key="comment.comment_ID" :id="\'comment-\'+comment.comment_ID">\
                             <vue-comment \
                               :id="comment.comment_ID" \
                               :comment_content="comment.comment_content" \
@@ -63,6 +60,9 @@ Vue.component('vue-post-comments', {
                     if(result['success'] == '1'){
                         self.comments.push(result['comment']);
                         self.isOpen = false
+                        // console.log('#comment-' + result['comment']['comment_ID']);
+                        // var scrollPos =  jQuery('#comment-' + result['comment']['comment_ID']).offset().top;
+                        // jQuery(window).scrollTop(scrollPos);
                     }
                     else{
                         alert('something is worng. Post save is unsuccessful');
