@@ -1,15 +1,47 @@
-.avc-comment{
+.avc-comment .comment-body{
   margin-bottom: 10px;
   border-bottom: 1px dashed palegoldenrod;
 }
-.avc-comment pre{
-  margin-bottom: 0;
-}
-
-.avc-comment span{
+.edit-comment .post-edit-link, .new-comment-btn{
   float: right;
+  background-color: #222;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 5px;
+  font-weight: 800;
+  padding: 0.7em 2em;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  white-space: nowrap;
 }
-.avc-comment button{
-  padding: .5em 1em;
-  margin-top: 5px;
+.edit-comment .cancel{
+  float: left;
+}
+/*.comment-list li{*/
+  /*display: flex;*/
+  /*margin-bottom: 5px;*/
+/*}*/
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;     /* triggers hasLayout */
+}
+.edit-comment{
+  margin-bottom: 20px;
+}
+.edit-comment .actions{
+  margin: 5px 0;
+}
+.avc-comment .avatar{
+  background: darkgrey;
 }

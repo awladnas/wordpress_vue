@@ -19,6 +19,7 @@ if ( ! class_exists( 'VueComment' ) ) {
 			add_action( 'wp_ajax_nopriv_vc_submit_comment', [$this, 'submit_comment'] );
 			add_action( 'wp_ajax_vc_submit_comment', [$this, 'submit_comment'] );
 			add_action( 'wp_ajax_vc_get_comments', [$this, 'get_comments'] );
+			add_action( 'wp_ajax_nopriv_vc_get_comments', [$this, 'get_comments'] );
 		}
 
 		// return html where shortcode used
@@ -31,15 +32,6 @@ if ( ! class_exists( 'VueComment' ) ) {
 			$html = "<div class='alkalab-vue-new-comment' data-avc-new-attrs='$vue_atts'> </div>";
 			$html .= "<div class='alkalab-vue-comment' data-avc-attrs='$vue_atts'> </div>";
 			echo $html;
-		}
-
-		public function comment_html($comment) {
-			$vue_atts = esc_attr( json_encode( [
-				'id'       => $comment->comment_ID,
-				'content' => $comment->comment_content,
-				'post_id'  => $comment->comment_post_ID,
-			] ) );
-			return "<div class='alkalab-vue-comment' data-avc-attrs='$vue_atts'> </div>";
 		}
 
 		// load all scripts
@@ -59,6 +51,7 @@ if ( ! class_exists( 'VueComment' ) ) {
 			$current_user = wp_get_current_user();
 			$comment['comment_approved'] = 1;
 			$comment['comment_author'] = $current_user->user_login;
+			$comment['comment_author_url'] = esc_url( get_avatar_url( $current_user->ID ));
 			$comment['user'] = $current_user->ID;
 			$comment['comment_parent'] = 0;
 			$comment['comment_type'] = 0;
@@ -66,21 +59,19 @@ if ( ! class_exists( 'VueComment' ) ) {
 			$comment['comment_content'] = sanitize_text_field( $_REQUEST['content'] );
 			if($_REQUEST['id']){
 				$comment['comment_ID'] = $_REQUEST['id'];
-				wp_update_comment( $comment );
+				echo json_encode(['success' => wp_update_comment( $comment )]);
+				exit;
 			}
 			else {
 				$comment_id = wp_insert_comment($comment);
-				echo json_encode(get_comment($comment_id));
+				echo json_encode(['success' => 1, 'comment' => get_comment($comment_id)]);
 				exit;
 			}
-			exit( 'success' );
 		}
 
 		// save comment
 		public function get_comments(){
-			$fields = ['comment_ID,comment_author,comment_date,comment_content'];
-			$comments = get_comments(array( 'post_id' => $_REQUEST['post_id'], 'fields' => $fields));
-//			$comments = get_comments(array( 'post_id' => $_REQUEST['post_id']));
+			$comments = get_comments(array( 'post_id' => $_REQUEST['post_id']));
 			echo json_encode( $comments);
 			exit;
 		}
