@@ -40,7 +40,9 @@ if ( ! class_exists( 'VueComment' ) ) {
 			// Only enqueue scripts if we're displaying a post that contains the shortcode
 			if( has_shortcode( $post->post_content, $this->shortcode_name ) ) {
 				wp_enqueue_script( 'vue', 'https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js', [], '2.5.16' );
-				wp_enqueue_script( 'vue-comment', plugin_dir_url( __FILE__ ) . 'js/vue-comment.js', [], '0.1', true );
+				wp_enqueue_script( 'vue-comments', plugin_dir_url( __FILE__ ) . 'js/comments.js', [], '0.1', true );
+				wp_enqueue_script( 'vue-comment', plugin_dir_url( __FILE__ ) . 'js/comment.js', [], '0.1', true );
+				wp_enqueue_script( 'vue-comment-main', plugin_dir_url( __FILE__ ) . 'js/vue-comment.js', [], '0.1', true );
 				wp_enqueue_style( 'vue-comment', plugin_dir_url( __FILE__ ) . 'css/vue-comment.css', [], '0.1' );
 			}
 		}
