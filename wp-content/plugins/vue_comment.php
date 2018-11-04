@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Vue Comment
+Plugin Name: Alkalab Vue Comment
 Description: Live-updating of comments of post.
 Version: 0.1
 Author: Awlad
