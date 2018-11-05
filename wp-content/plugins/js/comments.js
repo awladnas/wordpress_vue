@@ -1,15 +1,21 @@
 Vue.component('vue-post-comments', {
     template: '<div class="avc-comments-list container" :key="id">\
-                    <div class="clearfix col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5" v-if="isOpen">\
-                        <h4> New Comment </h4>\
-                        <textarea v-model="content" id="comment" name="comment" cols="45" rows="4" maxlength="65525" required="required">{{content}}</textarea>\
-                        <div class="actions mt-2">\
-                            <button @click="cancelEdit" class="btn btn-avc cancel"> Cancel</button>\
-                            <button @click="saveComment" class="btn btn-avc float-right"> Post</button>\
+                    <div class="container" v-if="isOpen">\
+                        <div class="clearfix col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-5">\
+                            <div class="our-comment-wrapper mb-2">\
+                                <div class="comment-inner border border-white bg-light p-3">\
+                                    <h4> New Comment </h4>\
+                                    <textarea v-model="content" id="comment" name="comment" cols="40" rows="3" maxlength="65525" required="required">{{content}}</textarea>\
+                                    <div class="actions mt-2 mb-2">\
+                                        <button @click="cancelEdit" class="btn btn-outline-secondary cancel"> Cancel</button>\
+                                        <button @click="saveComment" class="btn btn-outline-success float-right"> Post</button>\
+                                    </div>\
+                                </div>\
+                            </div>\
                         </div>\
                     </div>\
                     <div class="clearfix" v-else>\
-                        <button @click="newComment" class="btn btn-avc mb-2 float-right"> New Comment</button>\
+                        <button @click="newComment" class="btn btn-outline-success mb-2 float-right"> New Comment</button>\
                     </div>\
                     <ol class="comment-list">\
                         <li v-for="comment in updated_comments" :key="comment.comment_ID" :id="\'comment-\'+comment.comment_ID">\
@@ -60,9 +66,10 @@ Vue.component('vue-post-comments', {
                     if(result['success'] == '1'){
                         self.comments.push(result['comment']);
                         self.isOpen = false
-                        // console.log('#comment-' + result['comment']['comment_ID']);
-                        // var scrollPos =  jQuery('#comment-' + result['comment']['comment_ID']).offset().top;
-                        // jQuery(window).scrollTop(scrollPos);
+                        // var elmId = '#comment-' + result['comment']['comment_ID'];
+                        // var elmnt = jQuery('.comment-list').find(elmId);
+                        // console.log(elmnt, elmnt.offset());
+                        // jQuery(window).scrollTop(elmnt.offset().top());
                     }
                     else{
                         alert('something is worng. Post save is unsuccessful');
